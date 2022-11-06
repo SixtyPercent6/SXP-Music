@@ -27,7 +27,7 @@ module.exports = {
         .setColor(client.config.embedColor)
         .setTitle("Select a language")
         .setTimestamp()
-        .setFooter(client.config.embedText)
+        .setFooter({ text: `SXP Music` })
       interaction.reply({ embeds: [embed], components: [buttons] }).then(async Message => {
 
         const filter = i => i.user.id === interaction.user.id
@@ -72,7 +72,7 @@ module.exports = {
               .setColor(client.config.embedColor)
               .setTitle("Time ended, please try again.")
               .setTimestamp()
-              .setFooter(client.config.embedText)
+              .setFooter({ text: `SXP Music` })
 
             await interaction.editReply({ embeds: [embed], components: [buttons] }).catch(e => { })
           }

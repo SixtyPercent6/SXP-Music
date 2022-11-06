@@ -44,7 +44,7 @@ module.exports = {
             { name: `${lang.msg33}`, value: commands.map(x => `\`/${x.name}\``).join(' | ') }
           ])
           .setTimestamp()
-          .setFooter(client.config.embedText)
+          .setFooter({ text: `SXP Music` })
         interaction.reply({ embeds: [embed] }).catch(e => { })
       }
 

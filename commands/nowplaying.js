@@ -30,7 +30,7 @@ module.exports = {
 > By: <@${track.user.id}>`);
 
       embed.setTimestamp();
-      embed.setFooter(client.config.embedText)
+      embed.setFooter({ text: `SXP Music` })
 
       const saveButton = new ButtonBuilder();
       saveButton.setLabel(lang.msg47);

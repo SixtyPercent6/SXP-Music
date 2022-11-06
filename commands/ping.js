@@ -25,7 +25,7 @@ module.exports = {
             { name: lang.msg51, value: `\`${Math.round(client.ws.ping)}ms\` 🛰️` }
           ])
           .setTimestamp()
-          .setFooter(client.config.embedText)
+          .setFooter({ text: `SXP Music` })
         return interaction.editReply({ embeds: [embed] }).catch(e => { });
       }).catch(err => { })
 

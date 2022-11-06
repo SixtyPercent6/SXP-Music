@@ -69,7 +69,7 @@ try {
 
       embed.setDescription(`${maxTracks.map((song, i) => `**${i + 1}**. [${song.name}](${song.url}) | \`${song.uploader.name}\``).join('\n')}\n\n${lang.msg76.replace("{maxTracks.length}", maxTracks.length)}`);
       embed.setTimestamp();
-      embed.setFooter(client.config.embedText)
+      embed.setFooter({ text: `SXP Music` })
 
       let code
       if (buttons1 && buttons2) {
